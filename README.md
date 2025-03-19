@@ -27,11 +27,11 @@ This project demonstrates how to run a PySpark ETL job on AWS EMR to process NYC
 ### **2️⃣ Connecting to the Cluster via SSH**
 ```sh
 ssh -i keypair.pem hadoop@your-emr-master-node
-
+```
 ### **3️⃣ Submitting spark job**
 ```sh
 spark-submit s3://your-bucket/scripts/etl_job.py \
 --source_input1 s3://your-bucket/input/green_taxi_trip.csv \
 --source_input2 s3://your-bucket/input/trip_type.csv \
 --output_location s3://your-bucket/outputs/
-
+```
