@@ -30,7 +30,7 @@ ssh -i keypair.pem hadoop@your-emr-master-node
 ```
 
 ### **3️⃣ Submitting spark job**
-```sh
+```
 spark-submit s3://your-bucket/scripts/etl_job.py \
 --source_input1 s3://your-bucket/input/green_taxi_trip.csv \
 --source_input2 s3://your-bucket/input/trip_type.csv \
