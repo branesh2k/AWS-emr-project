@@ -11,7 +11,7 @@ This project demonstrates how to run a PySpark ETL job on AWS EMR to process NYC
 
 ## 📂 Folder Structure
 - `script/etl_job.py`: PySpark job
-- `docs/`: Architecture diagram & execution details
+- `docs/`: Data flow diagram
 - `logs/README.md`: How to fetch logs from S3
 
 ## 🔥 Running the Project
