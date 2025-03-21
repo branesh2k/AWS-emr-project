@@ -1,0 +1,25 @@
+{
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          {
+            "file_path": "/var/log/spark/*.out",
+            "log_group_name": "SparkHistoryServerLogs",
+            "log_stream_name": "{instance_id}"
+          },
+          {
+            "file_path": "/var/log/hadoop-yarn/hadoop-yarn-resourcemanager*.out",
+            "log_group_name": "YARNResourceManagerLogs",
+            "log_stream_name": "{instance_id}"
+          },
+          {
+            "file_path": "/mnt/var/log/hadoop/steps/*",
+            "log_group_name": "EMRStepLogs",
+            "log_stream_name": "{instance_id}"
+          }
+        ]
+      }
+    }
+  }
+}
